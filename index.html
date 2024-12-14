@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    <div class="background"></div>
+    <h1>Snake Game</h1>
+    <div class="cont1">
+        <canvas id="gameCanvas" width="400" height="400"></canvas>
+        <div class="container">
+            <button onclick="changeDirection({keyCode: 37})">←</button>
+            <button onclick="changeDirection({keyCode: 38})">↑</button>
+            <button onclick="changeDirection({keyCode: 40})">↓</button>
+            <button onclick="changeDirection({keyCode: 39})">→</button>
+            <button onclick="restartGame()">Restart</button>
+        </div>
+    </div>
+
+    <!-- JavaScript Link -->
+    <script src="./script.js"></script>
+</body>
+</html>
